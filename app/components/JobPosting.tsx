@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { FC } from "react";
-import { FaCircle } from "react-icons/fa6";
+import { IoLocationSharp } from "react-icons/io5";
+import { FaCoins } from "react-icons/fa";
 const JobPosting: FC = () => {
     return (
-        <div className="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg text-gray-500">
+        <div className="max-w-4xl mx-auto p-8 bg-white text-gray-500">
             <div className="flex items-center gap-2">
                 <h1 className="text-3xl font-bold mb-0">Senior Product Designer</h1>
                 <div className="flex items-center gap-2">
@@ -14,7 +15,15 @@ const JobPosting: FC = () => {
                     </span>
                 </div>
             </div>
-            <p className="text-gray-800 mb-4">Delaware, USA · $300k-$400k</p>
+            <div className="flex items-center mt-4">
+                <p className="text-gray-500 mb-4 mr-4">
+                    <span className="inline-flex items-center">
+                        <IoLocationSharp className="mr-1" />
+                        Delaware, USA · <FaCoins className="mr-2 ml-1" />$300k-$400k
+                    </span>
+                </p>
+            </div>
+            <hr className="mb-2" />
             <div className="flex">
                 <div className="flex flex-col items-start mr-8">
                     <h2 className="mb-2">Skills Required</h2>
@@ -51,7 +60,7 @@ const JobPosting: FC = () => {
                     </div>
                 </div>
             </div>
-
+            <hr className="mb-10" />
             <h2 className="text-md font-bold mb-2 text-gray-700">About the job</h2>
             <ol className="list-decimal list-inside mb-4">
                 <li>Handle the UI/UX research design</li>
