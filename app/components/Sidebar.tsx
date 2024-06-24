@@ -3,21 +3,18 @@ import { MdOutlinePeopleAlt } from "react-icons/md";
 import { BsFillPersonCheckFill } from "react-icons/bs";
 import { FaRegMessage } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
-
+import { ImBin } from "react-icons/im";
+import { FaPencil } from "react-icons/fa6";
 const Sidebar = () => {
     return (
         <aside className="p-4 bg-white shadow-md static right-0 bottom-0 top-0">
             <div className="flex space-x-4 mb-6 border-b pb-4">
-                <button className="flex items-center justify-center space-x-2 py-2 px-4 border border-[#DC4A2D] rounded-full text-[#DC4A2D]">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M4 5a1 1 0 011-1h10a1 1 0 011 1v10a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm1-2a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5z" clipRule="evenodd" />
-                    </svg>
+                <button className="flex items-center justify-center space-x-2 py-2 px-4 border border-[#DC4A2D] rounded-xl text-[#DC4A2D]">
+                    <ImBin />
                     <span>Delete job</span>
                 </button>
-                <button className="flex items-center justify-center space-x-2 py-2 px-4 bg-[#DC4A2D] text-white rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M17.414 2.586a2 2 0 010 2.828l-10 10a2 2 0 01-.707.414l-4 1a1 1 0 01-1.265-1.265l1-4a2 2 0 01.414-.707l10-10a2 2 0 012.828 0zM4 13.414L5.586 12 4 10.414 2.414 12 4 13.414zM6.828 11L12 5.828l1.586 1.586L8.414 13H6v-1.586l.828-.828zM15 3.414l1.586 1.586-2.122 2.122-1.586-1.586L15 3.414z" />
-                    </svg>
+                <button className="flex items-center justify-center space-x-2 py-2 px-4 bg-[#DC4A2D] text-white rounded-xl">
+                    <FaPencil />
                     <span>Edit job</span>
                 </button>
             </div>
