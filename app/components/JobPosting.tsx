@@ -1,48 +1,86 @@
-import { FC } from 'react';
-
+import Image from "next/image";
+import { FC } from "react";
+import { FaCircle } from "react-icons/fa6";
 const JobPosting: FC = () => {
     return (
-        <div className="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg text-black">
-            <h1 className="text-3xl font-bold mb-4">Senior Product Designer</h1>
-            <p className="text-gray-600 mb-2">Posted 2 days ago · <span className="text-green-500">Open</span></p>
+        <div className="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg text-gray-500">
+            <div className="flex items-center gap-2">
+                <h1 className="text-3xl font-bold mb-0">Senior Product Designer</h1>
+                <div className="flex items-center gap-2">
+                    <p className="text-gray-400 mb-0 text-sm">· posted 2 days ago</p>
+                    <span className="flex items-center text-green-600 bg-green-200 px-1 text-sm rounded-xl border-2 border-green-400">
+                        <span className="text-gray-md mr-1">· </span>
+                        Open
+                    </span>
+                </div>
+            </div>
             <p className="text-gray-800 mb-4">Delaware, USA · $300k-$400k</p>
+            <div className="flex">
+                <div className="flex flex-col items-start mr-8">
+                    <h2 className="mb-2">Skills Required</h2>
+                    <div className="flex flex-col items-start mb-4">
+                        <div className="flex items-center mb-2 mr-2 border-2 border-gray-200 p-1 rounded-lg font-semibold gap-1">
+                            <div>
+                                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" alt="Figma Logo" width={10} height={10} />
+                            </div>
+                            <span className="text-sm font-semibold rounded">Figma</span>
+                        </div>
+                        <div className="flex items-center mb-2 mr-2 border-2 border-gray-200 p-1 rounded-lg font-semibold gap-1">
+                            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png" alt="Adobe Illustrator Logo" width={20} height={20} />
+                            <span className="text-sm font-semibold rounded">Adobe Illustrator</span>
+                        </div>
+                        <div className="flex items-center mb-2 mr-2 border-2 border-gray-200 p-1 rounded-lg font-semibold gap-1">
+                            <Image src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg" alt="Adobe XD Logo" width={20} height={20} />
+                            <span className="text-sm font-semibold rounded">Adobe XD</span>
 
-            <div className="flex mb-4">
-                <span className="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Figma</span>
-                <span className="bg-yellow-100 text-yellow-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Adobe Illustrator</span>
-                <span className="bg-purple-100 text-purple-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Adobe XD</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex mr-8 gap-5">
+                    <div>
+                        <p className="mb-4 font-normal text-gray-600">Preferred Language:</p>
+                        <span className="text-gray-600 font-bold">English</span>
+                    </div>
+                    <div>
+                        <p className="mb-4 font-normal text-gray-600">Type:</p>
+                        <span className="text-gray-600 font-bold">Full Time</span>
+                    </div>
+                    <div>
+                        <p className="mb-4 font-normal text-gray-600">Years of Experience:</p>
+                        <span className="text-gray-600 font-bold">3+ Years of Experience</span>
+                    </div>
+                </div>
             </div>
 
-            <p className="mb-4"><strong>Preferred Language:</strong> English</p>
-            <p className="mb-4"><strong>Type:</strong> Full time</p>
-            <p className="mb-4"><strong>Years of Experience:</strong> 3+ Years of Experience</p>
-
-            <h2 className="text-xl font-semibold mb-2">About the job</h2>
-            <ul className="list-disc list-inside mb-4">
+            <h2 className="text-md font-bold mb-2 text-gray-700">About the job</h2>
+            <ol className="list-decimal list-inside mb-4">
                 <li>Handle the UI/UX research design</li>
                 <li>Work on researching the latest web applications designs & trends</li>
                 <li>Work on conceptualizing and visualizing</li>
                 <li>Work on creating graphics content and other graphic-related works</li>
-            </ul>
+            </ol>
 
-            <h2 className="text-xl font-semibold mb-2">Benefits:</h2>
+            <h2 className="text-gray-md font-bold text-gray-700 mb-2">Benefits:</h2>
             <ul className="list-disc list-inside mb-4">
                 <li>Health insurance</li>
                 <li>Provident Fund</li>
             </ul>
 
-            <h2 className="text-xl font-semibold mb-2">Schedule:</h2>
-            <p className="mb-4">Day shift</p>
+            <h2 className="text-gray-md font-bold text-gray-700 mb-2">Schedule:</h2>
+            <ul className="list-disc list-inside mb-4">
+                <li>Day shift</li>
+            </ul>
 
-            <h2 className="text-xl font-semibold mb-2">Supplemental pay types:</h2>
+            <h2 className="text-gray-md font-bold text-gray-700  mb-2">Supplemental pay types:</h2>
             <ul className="list-disc list-inside mb-4">
                 <li>Performance bonus</li>
                 <li>Yearly bonus</li>
             </ul>
-
-            <h2 className="text-xl font-semibold mb-2">Work Location:</h2>
-            <p>In person</p>
-        </div>
+            <div className="flex items-center gap-2">
+                <h2 className="text-gray-md font-bold text-gray-700">Work Location:</h2>
+                <p className="mt-1">In person</p>
+            </div>
+        </div >
     );
 };
 
