@@ -7,7 +7,7 @@ const NavBar = () => {
 
     return (
         <div className="border-b">
-            <nav className="flex space-x-8 p-4">
+            <nav className="flex space-x-8 max-w-4xl mx-auto p-8">
                 {['Job preview', 'Applicants', 'Match', 'Messages'].map((tab) => (
                     <Link key={tab} href="#">
                         <p

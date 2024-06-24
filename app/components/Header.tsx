@@ -9,11 +9,11 @@ const Header = () => {
     return (
         <header className="flex justify-between items-center p-4 bg-white shadow-md">
             <div className="flex items-center">
-                <div className="w-16 h-16 bg-gray-200 flex justify-center items-center">
+                <div className="w-16 h-16 bg-gray-200 flex justify-center items-center text-[#DC4A2D] ">
                     Logo
                 </div>
             </div>
-            <nav className="flex space-x-6">
+            <nav className="flex space-x-6 rounded-full border-2 border-gray-100 p-2">
                 <button className="flex items-center space-x-2 p-2 rounded-full bg-[#DC4A2D] text-white">
                     <FaSuitcase />
                     <span>Jobs</span>

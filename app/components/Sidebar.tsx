@@ -6,7 +6,7 @@ import { FaEye } from "react-icons/fa";
 
 const Sidebar = () => {
     return (
-        <aside className="p-4 bg-white shadow-md">
+        <aside className="p-4 bg-white shadow-md static right-0 bottom-0 top-0">
             <div className="flex space-x-4 mb-6 border-b pb-4">
                 <button className="flex items-center justify-center space-x-2 py-2 px-4 border border-[#DC4A2D] rounded-full text-[#DC4A2D]">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
